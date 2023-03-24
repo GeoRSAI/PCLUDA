@@ -13,7 +13,7 @@ This repository is the official implementation of [PCLUDA: A Pseudo-Label Consis
 
 
 ## Data Preparing
-Download dataset from the following link (code is chk8):
+Download dataset from the following link (code is `chk8`):
 
 [BaiduYun](https://pan.baidu.com/s/1YbsJZQEFaLyl3HRE3uBsbQ)
 
