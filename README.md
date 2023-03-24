@@ -28,7 +28,7 @@ The pipeline for training with PCLUDA is the following:
 
 -  `python pcluda.py /your_path/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid --phase test`
 
-3. Image Retrieval Test. The retrieval code is under continuous optimization.
+3. Test the remote sensing image retrieval performance. The retrieval code is under continuous optimization.
 
 - `python pcluda.py /your_path/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid --phase retrieval`
 
