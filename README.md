@@ -6,7 +6,7 @@ This repository is the official implementation of [PCLUDA: A Pseudo-Label Consis
 
 
 ## Requirements
-- This code is written for `python3`.
+- This code is written for `python3`
 - pytorch >= 1.7.0
 - torchvision
 - numpy, prettytable, tqdm, scikit-learn, matplotlib, argparse, h5py
