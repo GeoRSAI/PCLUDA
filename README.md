@@ -22,15 +22,15 @@ The pipeline for training with PCLUDA is the following:
 
 1. Train the model. For example, to run an experiment for UCM_LandUse dataset (source domain) and AID dataset (target domain),  run:
 
-`python pcluda.py /your_path/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid`
+  `python pcluda.py /your_path/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid`
 
 2. Evaluate the classification performance of the model. 
 
-`python pcluda.py /your_path/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid --phase test`
+  `python pcluda.py /your_path/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid --phase test`
 
 3. Image Retrieval Test. The retrieval code is under continuous optimization.
 
-`python pcluda.py /your_path/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid --phase retrieval`
+  `python pcluda.py /your_path/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid --phase retrieval`
 
 
 ## Acknowledgment
