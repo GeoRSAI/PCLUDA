@@ -112,15 +112,15 @@ class RS_dataset_imgpath(Dataset):
 def get_rs_dataset(root, dataset_name, transform, appli, strong_transform=None):
 
     if appli == 'train':
-        train_csv = dataset_dict[dataset_name]['train_path']
+        data_csv = dataset_dict[dataset_name]['train_path']
     elif appli == 'val':
-        train_csv = dataset_dict[dataset_name]['val_path']
+        data_csv = dataset_dict[dataset_name]['val_path']
     elif appli == 'test':
-        train_csv = dataset_dict[dataset_name]['test_path']
+        data_csv = dataset_dict[dataset_name]['test_path']
     else:
-        train_csv = dataset_dict[dataset_name]['database_path']
+        data_csv = dataset_dict[dataset_name]['database_path']
 
-    dataset = RS_dataset(root, index_file=train_csv, transform=transform, strong_transform=strong_transform)
+    dataset = RS_dataset(root, index_file=data_csv, transform=transform, strong_transform=strong_transform)
 
     n_class = dataset.get_class()
 
@@ -130,15 +130,15 @@ def get_rs_dataset(root, dataset_name, transform, appli, strong_transform=None):
 def get_rs_dataset_imgpath(root, dataset_name, transform, appli):
 
     if appli == 'train':
-        train_csv = dataset_dict[dataset_name]['train_path']
+        data_csv = dataset_dict[dataset_name]['train_path']
     elif appli == 'val':
-        train_csv = dataset_dict[dataset_name]['val_path']
+        data_csv = dataset_dict[dataset_name]['val_path']
     elif appli == 'test':
-        train_csv = dataset_dict[dataset_name]['test_path']
+        data_csv = dataset_dict[dataset_name]['test_path']
     else:
-        train_csv = dataset_dict[dataset_name]['database_path']
+        data_csv = dataset_dict[dataset_name]['database_path']
 
-    dataset = RS_dataset_imgpath(root, index_file=train_csv, transform=transform)
+    dataset = RS_dataset_imgpath(root, index_file=data_csv, transform=transform)
 
     n_class = dataset.get_class()
 
