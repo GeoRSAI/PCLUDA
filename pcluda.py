@@ -239,7 +239,7 @@ def train(train_source_iter: ForeverDataIterator, train_target_iter: ForeverData
 
 if __name__ == '__main__':
     '''
-    python pcluda.py /home/sda/cross_dataset/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid
+    python pcluda.py /your_path/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid
     '''
     parser = argparse.ArgumentParser(description='PCLUDA for Unsupervised Domain Adaptation')
     # dataset parameters
