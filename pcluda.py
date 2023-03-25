@@ -241,7 +241,7 @@ if __name__ == '__main__':
     '''
     python pcluda.py /home/sda/cross_dataset/PCLUDA_dataset/ -s UCMD -t AID -a resnet50 --epochs 30 --seed 1 --log logs/pcluda/ucmd_aid
     '''
-    parser = argparse.ArgumentParser(description='DAN for Unsupervised Domain Adaptation')
+    parser = argparse.ArgumentParser(description='PCLUDA for Unsupervised Domain Adaptation')
     # dataset parameters
     parser.add_argument('root', metavar='DIR',
                         help='root path of dataset')
