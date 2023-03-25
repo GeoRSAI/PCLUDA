@@ -106,7 +106,7 @@ def main(args: argparse.Namespace):
         checkpoint = torch.load(logger.get_checkpoint_path('best'), map_location='cpu')
         classifier.load_state_dict(checkpoint)
 
-    # 自定义的检索过程
+    # image retrieval test
     if args.phase == 'retrieval':
         # build the feature extractor
         feature_extractor = nn.Sequential(classifier.backbone, classifier.pool_layer, classifier.bottleneck).to(device)
@@ -129,7 +129,7 @@ def main(args: argparse.Namespace):
         print("Retrieval mAP = {:0.4f}".format(mAP))
         return
 
-
+    # image classification test
     if args.phase == 'test':
         acc1 = utils.validate(test_loader, classifier, args, device)
         print(acc1)
